@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(221.0, 167.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="Select Columns" position="(367.0, 414.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="2" name="Neural Network" position="(596.0, 484.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owneuralnetwork.OWNNLearner" title="Neural Network" version="" />
+		<node id="3" name="Test and Score" position="(825.0, 295.0)" project_name="Orange3" qualified_name="Orange.widgets.evaluate.owtestlearners.OWTestLearners" title="Test and Score" version="" />
+		<node id="4" name="Predictions" position="(868.0, 463.0)" project_name="Orange3" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" title="Predictions" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Learner" sink_node_id="3" source_channel="Learner" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="3" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="4" sink_channel="Predictors" sink_node_id="4" source_channel="Model" source_node_id="2" />
+		<link enabled="true" id="5" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="1" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos/orange_risco_inadimplencia.txt', {'encoding': 'ascii', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x8a\x00\x00\x00\xf4\x00\x00\x03\xb5\x00\x00\x02P\x00\x00\x02\x92\x00\x00\x01\x13\x00\x00\x03\xad\x00\x00\x02H\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDMgHZ0MsAAgAAAAAB7AAAAGMAAARTAAAC4QAAAfQAAACCAAAE
+SwAAAtkAAAAAAAAAAAVWcQRYEgAAAHVzZV9pbnB1dF9mZWF0dXJlc3EFiVgLAAAAX192ZXJzaW9u
+X19xBksBWBAAAABjb250ZXh0X3NldHRpbmdzcQddcQhjb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNv
+bnRleHQKcQkpgXEKfXELKFgEAAAAdGltZXEMR0HXg57eGr2GWAYAAAB2YWx1ZXNxDX1xDihYEQAA
+AGRvbWFpbl9yb2xlX2hpbnRzcQ99cRAoWAwAAABoaXN0X2NyZWRpdG9xEUsBhnESWAkAAABhdHRy
+aWJ1dGVxE0sAhnEUWAgAAABwb3VwYW5jYXEVSwGGcRZoE0sBhnEXWA0AAABkaXZpZGFfY2FydGFv
+cRhLAYZxGWgTSwKGcRpYBQAAAHJlbmRhcRtLAYZxHGgTSwOGcR1YFAAAAHN0YXR1c19yaXNjb19w
+YWdhZG9ycR5LAYZxH1gFAAAAY2xhc3NxIEsAhnEhdUr+////hnEiaAZLAXVYCgAAAGF0dHJpYnV0
+ZXNxI31xJChoEUsBaBVLAWgYSwFoG0sBaB5LAXVYBQAAAG1ldGFzcSV9cSZ1YmF1Lg==
+</properties>
+		<properties format="literal" node_id="2">{'activation_index': 1, 'alpha_index': 0, 'auto_apply': True, 'controlAreaVisible': True, 'hidden_layers_input': '400,300,100', 'learner_name': 'Neural Network', 'max_iterations': 200, 'replicable': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x7f\x00\x00\x00\xef\x00\x00\x03\xc1\x00\x00\x02U\x00\x00\x02\x87\x00\x00\x01\x0e\x00\x00\x03\xb9\x00\x00\x02M\x00\x00\x00\x00\x00\x00\x00\x00\x05V', 'solver_index': 2, '__version__': 1}</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYDQAAAGN2X3N0cmF0aWZpZWRxAohYBwAA
+AG5fZm9sZHNxA0sDWAkAAABuX3JlcGVhdHNxBEsDWAoAAAByZXNhbXBsaW5ncQVLAFgLAAAAc2Ft
+cGxlX3NpemVxBksJWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQdDMgHZ0MsAAgAAAAABkgAAAM4A
+AAStAAACdwAAAZoAAADtAAAEpQAAAm8AAAAAAAAAAAVWcQhYEgAAAHNodWZmbGVfc3RyYXRpZmll
+ZHEJiFgLAAAAc2NvcmVfdGFibGVxCn1xC1gMAAAAc2hvd25fc2NvcmVzcQxjYnVpbHRpbnMKc2V0
+CnENXXEOKFgDAAAATUFFcQ9YAgAAAENBcRBYAwAAAE1TRXERWAMAAABBVUNxElgCAAAAUjJxE1gE
+AAAAUk1TRXEUWAkAAABQcmVjaXNpb25xFVgCAAAARjFxFlgGAAAAUmVjYWxscRdlhXEYUnEZc1gL
+AAAAX192ZXJzaW9uX19xGksDWBAAAABjb250ZXh0X3NldHRpbmdzcRtdcRxjb3Jhbmdld2lkZ2V0
+LnNldHRpbmdzCkNvbnRleHQKcR0pgXEefXEfKFgEAAAAdGltZXEgR0HXg58KLfYGWAYAAAB2YWx1
+ZXNxIX1xIihYDwAAAGNsYXNzX3NlbGVjdGlvbnEjWBYAAAAoQXZlcmFnZSBvdmVyIGNsYXNzZXMp
+cSRK/////4ZxJVgMAAAAZm9sZF9mZWF0dXJlcSZOSv7///+GcSdYFQAAAGZvbGRfZmVhdHVyZV9z
+ZWxlY3RlZHEoiUr+////hnEpaAp9cSpoGksDdVgKAAAAYXR0cmlidXRlc3ErKFgMAAAAaGlzdF9j
+cmVkaXRvcSxLAYZxLVgIAAAAcG91cGFuY2FxLksBhnEvWA0AAABkaXZpZGFfY2FydGFvcTBLAYZx
+MVgFAAAAcmVuZGFxMksBhnEzdHE0WAUAAABtZXRhc3E1KVgKAAAAY2xhc3NfdmFyc3E2WBQAAABz
+dGF0dXNfcmlzY29fcGFnYWRvcnE3SwGGcTiFcTl1YmF1Lg==
+</properties>
+		<properties format="pickle" node_id="4">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYCQAAAGRyYXdfZGlzdHECiFgMAAAAb3V0
+cHV0X2F0dHJzcQOIWBIAAABvdXRwdXRfcHJlZGljdGlvbnNxBIhYFAAAAG91dHB1dF9wcm9iYWJp
+bGl0aWVzcQWIWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQZDMgHZ0MsAAgAAAAAAqwAAAIkAAAS5
+AAACnQAAALMAAACoAAAEsQAAApUAAAAAAAAAAAVWcQdYCgAAAHNob3dfYXR0cnNxCIhYEAAAAHNo
+b3dfcHJlZGljdGlvbnNxCYhYEgAAAHNob3dfcHJvYmFiaWxpdGllc3EKiFgLAAAAc2NvcmVfdGFi
+bGVxC31xDFgMAAAAc2hvd25fc2NvcmVzcQ1jYnVpbHRpbnMKc2V0CnEOXXEPKFgDAAAATUFFcRBY
+AgAAAENBcRFYAwAAAE1TRXESWAMAAABBVUNxE1gCAAAAUjJxFFgEAAAAUk1TRXEVWAkAAABQcmVj
+aXNpb25xFlgCAAAARjFxF1gGAAAAUmVjYWxscRhlhXEZUnEac1gLAAAAX192ZXJzaW9uX19xG0sB
+WBAAAABjb250ZXh0X3NldHRpbmdzcRxdcR1jb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNvbnRleHQK
+cR4pgXEffXEgKFgEAAAAdGltZXEhR0HXg583sGLmWAYAAAB2YWx1ZXNxIn1xIyhYEAAAAHNlbGVj
+dGVkX2NsYXNzZXNxJF1xJShLAEsBSwJlaAt9cSZoG0sBdVgHAAAAY2xhc3Nlc3EnXXEoKFgEAAAA
+YWx0b3EpWAUAAABiYWl4b3EqWAgAAABtb2RlcmFkb3ErZXViYXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

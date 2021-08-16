@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(164.0, 186.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="Select Columns" position="(388.0, 384.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="2" name="CN2 Rule Induction" position="(597.0, 350.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owrules.OWRuleLearner" title="CN2 Rule Induction" version="" />
+		<node id="3" name="CN2 Rule Viewer" position="(844.0, 314.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owruleviewer.OWRuleViewer" title="CN2 Rule Viewer" version="" />
+		<node id="4" name="Data Table" position="(356.0, 138.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Classifier" sink_node_id="3" source_channel="Model" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="0" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos/orange_risco_inadimplencia.txt', {'encoding': 'ascii', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x8a\x00\x00\x00\xf4\x00\x00\x03\xb5\x00\x00\x02P\x00\x00\x02\x92\x00\x00\x01\x13\x00\x00\x03\xad\x00\x00\x02H\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDMgHZ0MsAAgAAAAAB7AAAAGMAAARTAAAC4QAAAfQAAACCAAAE
+SwAAAtkAAAAAAAAAAAVWcQRYEgAAAHVzZV9pbnB1dF9mZWF0dXJlc3EFiVgLAAAAX192ZXJzaW9u
+X19xBksBWBAAAABjb250ZXh0X3NldHRpbmdzcQddcQhjb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNv
+bnRleHQKcQkpgXEKfXELKFgEAAAAdGltZXEMR0HXfAscYNKjWAYAAAB2YWx1ZXNxDX1xDihYEQAA
+AGRvbWFpbl9yb2xlX2hpbnRzcQ99cRAoWAwAAABoaXN0X2NyZWRpdG9xEUsBhnESWAkAAABhdHRy
+aWJ1dGVxE0sAhnEUWAgAAABwb3VwYW5jYXEVSwGGcRZoE0sBhnEXWA0AAABkaXZpZGFfY2FydGFv
+cRhLAYZxGWgTSwKGcRpYBQAAAHJlbmRhcRtLAYZxHGgTSwOGcR1YFAAAAHN0YXR1c19yaXNjb19w
+YWdhZG9ycR5LAYZxH1gFAAAAY2xhc3NxIEsAhnEhdUr+////hnEiaAZLAXVYCgAAAGF0dHJpYnV0
+ZXNxI31xJChoEUsBaBVLAWgYSwFoG0sBaB5LAXVYBQAAAG1ldGFzcSV9cSZ1YmF1Lg==
+</properties>
+		<properties format="literal" node_id="2">{'auto_apply': True, 'beam_width': 5, 'checked_default_alpha': False, 'checked_parent_alpha': False, 'controlAreaVisible': True, 'covering_algorithm': 1, 'default_alpha': 1.0, 'evaluation_measure': 1, 'gamma': 0.79, 'learner_name': 'CN2 rule inducer', 'max_rule_length': 5, 'min_covered_examples': 1, 'parent_alpha': 1.0, 'rule_ordering': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00L\x00\x00\x00B\x00\x00\x01k\x00\x00\x02(\x00\x00\x00T\x00\x00\x00a\x00\x00\x01c\x00\x00\x02 \x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="literal" node_id="3">{'compact_view': False, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\xb2\x00\x00\x00I\x00\x00\x04\xe1\x00\x00\x021\x00\x00\x01\xba\x00\x00\x00h\x00\x00\x04\xd9\x00\x00\x02)\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="pickle" node_id="4">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAY29sb3JfYnlfY2xhc3NxAohYEgAAAGNvbnRy
+b2xBcmVhVmlzaWJsZXEDiFgOAAAAZGlzdF9jb2xvcl9SR0JxBChL3EvcS9xL/3RxBVgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEGQzIB2dDLAAIAAP///yMAAAAjAAACUgAAAj3///8rAAAAQgAAAkoA
+AAI1AAAAAAAAAAAFVnEHWAsAAABzZWxlY3Rfcm93c3EIiFgNAAAAc2VsZWN0ZWRfY29sc3EJXXEK
+KEsASwFLAksDSwRlWA0AAABzZWxlY3RlZF9yb3dzcQtdcQxLAGFYFQAAAHNob3dfYXR0cmlidXRl
+X2xhYmVsc3ENiFgSAAAAc2hvd19kaXN0cmlidXRpb25zcQ6IWAsAAABfX3ZlcnNpb25fX3EPSwFY
+EAAAAGNvbnRleHRfc2V0dGluZ3NxEF1xEWNvcmFuZ2V3aWRnZXQuc2V0dGluZ3MKQ29udGV4dApx
+EimBcRN9cRQoWAQAAAB0aW1lcRVHQdd8Cy8iELBYBgAAAHZhbHVlc3EWfXEXaA9LAXNYCgAAAGF0
+dHJpYnV0ZXNxGH1xGShYDAAAAGhpc3RfY3JlZGl0b3EaXXEbKFgDAAAAYm9hcRxYBAAAAGJvYSBx
+HVgMAAAAZGVzY29uaGVjaWRhcR5YBAAAAHJ1aW1xH2VYCAAAAHBvdXBhbmNhcSBdcSEoWAQAAABh
+bHRhcSJYBQAAAGJhaXhhcSNYBwAAAG5lbmh1bWFxJGVYDQAAAGRpdmlkYV9jYXJ0YW9xJV1xJihY
+CAAAAGFkZXF1YWRhcSdYBwAAAG5lbmh1bWFxKGVYBQAAAHJlbmRhcSldcSooWAQAAAAwXzEwcStY
+BQAAADEwXzIwcSxYCAAAAGFjaW1hXzIwcS1lWBQAAABzdGF0dXNfcmlzY29fcGFnYWRvcnEuXXEv
+KFgEAAAAYWx0b3EwWAUAAABiYWl4b3ExWAgAAABtb2RlcmFkb3EyZXVYBQAAAG1ldGFzcTN9cTR1
+YmF1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(150, 150)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="Select Columns" position="(333.0, 320.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="2" name="PCA" position="(538.0, 222.0)" project_name="Orange3" qualified_name="Orange.widgets.unsupervised.owpca.OWPCA" title="PCA" version="" />
+		<node id="3" name="Data Table" position="(800.0, 377.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="4" name="Save Data" position="(930.0, 244.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owsave.OWSave" title="Save Data" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Data" sink_node_id="3" source_channel="Components" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Selected Data" source_node_id="3" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos/qualidade_agua.txt', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x8a\x00\x00\x00\xf4\x00\x00\x03\xb5\x00\x00\x02P\x00\x00\x02\x92\x00\x00\x01\x13\x00\x00\x03\xad\x00\x00\x02H\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDMgHZ0MsAAgAAAAAB7AAAAGMAAARTAAAC4QAAAfQAAACCAAAE
+SwAAAtkAAAAAAAAAAAVWcQRYEgAAAHVzZV9pbnB1dF9mZWF0dXJlc3EFiVgLAAAAX192ZXJzaW9u
+X19xBksBWBAAAABjb250ZXh0X3NldHRpbmdzcQddcQhjb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNv
+bnRleHQKcQkpgXEKfXELKFgEAAAAdGltZXEMR0HXg6J52PG4WAYAAAB2YWx1ZXNxDX1xDihYEQAA
+AGRvbWFpbl9yb2xlX2hpbnRzcQ99cRAoWAIAAABwSHERSwKGcRJYCQAAAGF0dHJpYnV0ZXETSwCG
+cRRYAQAAAE5xFUsChnEWaBNLAYZxF1gIAAAAT3hpZ2VuaW9xGEsChnEZaBNLAoZxGlgQAAAATWF0
+ZXJpYV9PcmdhbmljYXEbSwKGcRxoE0sDhnEdWAUAAABsb2NhbHEeSwOGcR9YBAAAAG1ldGFxIEsA
+hnEhdUr+////hnEiaAZLAXVYCgAAAGF0dHJpYnV0ZXNxI31xJChoEUsCaBVLAmgYSwJoG0sCdVgF
+AAAAbWV0YXNxJX1xJmgeSwNzdWJhdS4=
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgLAAAAYXhpc19sYWJlbHNxAksKWBIAAABjb250cm9s
+QXJlYVZpc2libGVxA4hYBAAAAG1heHBxBEsUWAsAAABuY29tcG9uZW50c3EFSwNYEwAAAHNhdmVk
+V2lkZ2V0R2VvbWV0cnlxBkMyAdnQywACAAAAAAEPAAAAYgAABEcAAAKGAAABFwAAAIEAAAQ/AAAC
+fgAAAAAAAAAABVZxB1gQAAAAdmFyaWFuY2VfY292ZXJlZHEIS2BYCwAAAF9fdmVyc2lvbl9fcQlL
+AVgQAAAAY29udGV4dF9zZXR0aW5nc3EKXXELY29yYW5nZXdpZGdldC5zZXR0aW5ncwpDb250ZXh0
+CnEMKYFxDX1xDihYBAAAAHRpbWVxD0dB14Oig3jyEFgGAAAAdmFsdWVzcRB9cREoWAkAAABub3Jt
+YWxpemVxEohK/v///4ZxE2gJSwF1WAoAAABhdHRyaWJ1dGVzcRR9cRUoWAIAAABwSHEWSwJYAQAA
+AE5xF0sCWAgAAABPeGlnZW5pb3EYSwJYEAAAAE1hdGVyaWFfT3JnYW5pY2FxGUsCdVgFAAAAbWV0
+YXNxGn1xG1gFAAAAbG9jYWxxHEsDc3ViYXUu
+</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAY29sb3JfYnlfY2xhc3NxAohYEgAAAGNvbnRy
+b2xBcmVhVmlzaWJsZXEDiFgOAAAAZGlzdF9jb2xvcl9SR0JxBChL3EvcS9xL/3RxBVgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEGQzIB2dDLAAIAAAAAAHEAAACFAAADoAAAAp8AAAB5AAAApAAAA5gA
+AAKXAAAAAAAAAAAFVnEHWAsAAABzZWxlY3Rfcm93c3EIiFgNAAAAc2VsZWN0ZWRfY29sc3EJXXEK
+WA0AAABzZWxlY3RlZF9yb3dzcQtdcQxYFQAAAHNob3dfYXR0cmlidXRlX2xhYmVsc3ENiFgSAAAA
+c2hvd19kaXN0cmlidXRpb25zcQ6IWAsAAABfX3ZlcnNpb25fX3EPSwFYEAAAAGNvbnRleHRfc2V0
+dGluZ3NxEF1xEWNvcmFuZ2V3aWRnZXQuc2V0dGluZ3MKQ29udGV4dApxEimBcRN9cRQoWAQAAAB0
+aW1lcRVHQdeDopXjT2RYBgAAAHZhbHVlc3EWfXEXaA9LAXNYCgAAAGF0dHJpYnV0ZXNxGH1xGShY
+AgAAAHBIcRpLAlgBAAAATnEbSwJYCAAAAE94aWdlbmlvcRxLAlgQAAAATWF0ZXJpYV9Pcmdhbmlj
+YXEdSwJ1WAUAAABtZXRhc3EefXEfWAkAAABjb21wb25lbnRxIEsDc3ViYXUu
+</properties>
+		<properties format="literal" node_id="4">{'add_type_annotations': True, 'auto_save': True, 'controlAreaVisible': True, 'filename': 'C:/Users/grima/Downloads/componentes principais.csv', 'filter': 'Comma-separated values (*.csv)', 'last_dir': 'C:/Users/grima/Downloads', 'savedWidgetGeometry': b"\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02=\x00\x00\x01'\x00\x00\x03[\x00\x00\x01\xc1\x00\x00\x02E\x00\x00\x01F\x00\x00\x03S\x00\x00\x01\xb9\x00\x00\x00\x00\x00\x00\x00\x00\x05V", '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

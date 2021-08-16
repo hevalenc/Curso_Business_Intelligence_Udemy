@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(150, 150)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="MDS" position="(540.0, 393.0)" project_name="Orange3" qualified_name="Orange.widgets.unsupervised.owmds.OWMDS" title="MDS" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos/orange_risco_inadimplencia.txt', {'encoding': 'ascii', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'F:/Grimaldo/Udemy - Novas Aulas/Orange Canvas/Arquivos', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x8a\x00\x00\x00\xf4\x00\x00\x03\xb5\x00\x00\x02P\x00\x00\x02\x92\x00\x00\x01\x13\x00\x00\x03\xad\x00\x00\x02H\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWA4AAABp
+bml0aWFsaXphdGlvbnEDSwBYCAAAAG1heF9pdGVycQRNLAFYDAAAAHJlZnJlc2hfcmF0ZXEFSwRY
+EwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxBkMyAdnQywACAAAAAADBAAAALQAABOkAAAKOAAAAyQAA
+AEwAAAThAAAChgAAAAAAAAAABVZxB1gJAAAAc2VsZWN0aW9ucQhdcQkoSwBjbnVtcHkuY29yZS5t
+dWx0aWFycmF5CnNjYWxhcgpxCmNudW1weQpkdHlwZQpxC1gCAAAAdTFxDEsASwGHcQ1ScQ4oSwNY
+AQAAAHxxD05OTkr/////Sv////9LAHRxEGJDAQFxEYZxElJxE4ZxFEsBaApoDmgRhnEVUnEWhnEX
+SxhoCmgOaBGGcRhScRmGcRpLJGgKaA5oEYZxG1JxHIZxHWVYBQAAAGdyYXBocR59cR8oWAsAAABh
+bHBoYV92YWx1ZXEgS/9YDQAAAGNsYXNzX2RlbnNpdHlxIYlYDwAAAGNvbm5lY3RlZF9wYWlyc3Ei
+SwFYCwAAAGppdHRlcl9zaXplcSNLClgTAAAAbGFiZWxfb25seV9zZWxlY3RlZHEkiVgLAAAAcG9p
+bnRfd2lkdGhxJUsOWAkAAABzaG93X2dyaWRxJolYCwAAAHNob3dfbGVnZW5kcSeIdVgLAAAAX192
+ZXJzaW9uX19xKEsDWBAAAABjb250ZXh0X3NldHRpbmdzcSldcSpjb3Jhbmdld2lkZ2V0LnNldHRp
+bmdzCkNvbnRleHQKcSspgXEsfXEtKFgEAAAAdGltZXEuR0HXe01Vpqz/WAYAAAB2YWx1ZXNxL31x
+MChYCgAAAGF0dHJfY29sb3JxMVgUAAAAc3RhdHVzX3Jpc2NvX3BhZ2Fkb3JxMktlhnEzWAoAAABh
+dHRyX2xhYmVscTRYCAAAAHBvdXBhbmNhcTVLZYZxNlgKAAAAYXR0cl9zaGFwZXE3Tkr+////hnE4
+WAkAAABhdHRyX3NpemVxOU5K/v///4ZxOmgefXE7aChLA3VYCgAAAGF0dHJpYnV0ZXNxPH1xPShY
+DAAAAGhpc3RfY3JlZGl0b3E+SwFoNUsBWA0AAABkaXZpZGFfY2FydGFvcT9LAVgFAAAAcmVuZGFx
+QEsBaDJLAXVYBQAAAG1ldGFzcUF9cUJ1YmF1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
